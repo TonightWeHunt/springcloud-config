@@ -5,7 +5,7 @@ spring:
     name: provider
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/world?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 486213
 mybatis:
@@ -18,7 +18,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/,http://eureka2:7002/eureka/,http://eureka3:7003/eureka/
   instance:
     instance-id: provider1
     prefer-ip-address: true
