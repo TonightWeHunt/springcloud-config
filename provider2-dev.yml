@@ -22,3 +22,4 @@ eureka:
   instance:
     instance-id: provider2
     prefer-ip-address: true
+info.programmer:20175414
